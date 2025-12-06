@@ -136,9 +136,6 @@ Add depth estimation using stereo or monocular cues
 Hand-shape validation using contour convexity
 Adaptive skin-color calibration based on lighting
 
-# Demo: 
-https://drive.google.com/drive/u/0/folders/1BDTVkeNUhFdPxYn4Nv3g45rxc5haX8wZ
-
 # Acknowledgments: 
 
 This project was built using:
