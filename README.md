@@ -53,24 +53,6 @@ Fully compliant with assignment constraints:
 - No cloud APIs
 - Pure OpenCV + NumPy
 
-┌───────────────────┐       ┌────────────────────┐       ┌──────────────────────┐
-│  Webcam Feed       │       │  Skin Detection     │       │  Hand Extraction     │
-│  (OpenCV)          ├──────▶│  HSV + YCrCb mask   ├──────▶│  Largest valid blob  │
-└───────────────────┘       │  Face removal       │       │  Centroid + contour  │
-                             └─────────┬──────────┘       └─────────┬────────────┘
-                                       │                            │
-                                       ▼                            ▼
-                               ┌────────────────────┐      ┌──────────────────────────┐
-                               │ Distance Computation│      │ Overlay Rendering        │
-                               │ centroid→rectangle  │      │ SAFE/WARNING/DANGER UI   │
-                               └─────────┬──────────┘      └─────────┬────────────────┘
-                                         ▼                            ▼
-                                   ┌──────────────────────────────────────────┐
-                                   │       Classification Logic               │
-                                   │  NO_HAND / SAFE / WARNING / DANGER       │
-                                   └──────────────────────────────────────────┘
-
-
 # Project Structure:
 
 Hand-Tracking-System/
